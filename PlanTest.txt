@@ -1,0 +1,41 @@
+*************************************************************************
+*  					TesteAutomacao										*
+*************************************************************************
+
+
+CT01 - [POS] VALIDAR ACESSO A URL A PÁGINA "SIMULADOR DE INVESTIMENTO"
+	Step 1. Acessar url da página Simulação de Investimento
+	Resultado esperado:
+	-Página Simular Investimento aberta e logo Sicredi exibido
+	
+CT02 - [NEG] VALIDAR SIMULAÇÃO DE INVESTIMENTO COM TODOS OS CAMPOS EM BRANCO
+	Step 1. Acessar url da página Simulação de Investimento
+	Step 2. Clicar no botão SIMULAR INVESTIMENTO
+	Resultado esperado:
+	-Mensagem "Valor minímo de 20,00" no campo Qual o valor que você quer aplicar?
+	-Mensagem "Valor minímo de 20,00" no campo Quanto você quer poupar todo mês?
+	-Mensagem "Obrigatório" no campo Por quanto tempo você quer poupar?
+	
+CT03 - [NEG] VALIDAR SIMULAÇÃO DE INVESTIMENTO COM VALORES ABAIXO DO MINIMO
+	Step 1. Acessar url da página Simulação de Investimento
+	Step 2. Preencher campos com valor abaixo do minimo(20,00)
+	Step 3. Clicar no botão SIMULAR INVESTIMENTO
+	Resultado esperado:
+	-Mensagem "Valor minímo de 20,00" no campo Qual o valor que você quer aplicar?
+	-Mensagem "Valor minímo de 20,00" no campo Quanto você quer poupar todo mês?
+	
+CT04 - [NEG] VALIDAR SIMULAÇÃO DE INVESTIMENTO COM VALORES INVÁLIDOS
+	Step 1. Acessar url da página Simulação de Investimento
+	Step 2. Preencher campos com valores diferentes de numéricos
+	Step 3. Clicar no botão SIMULAR INVESTIMENTO
+	Resultado esperado:
+	-Campos continuam em branco
+	
+CT05 - [POS] VALIDAR SIMULAÇÃO DE INVESTIMENTO PREENCHENDO OS CAMPOS CORRETAMENTE
+	Step 1. Acessar url da página Simulação de Investimento
+	Step 2. Preencher os campos corretamente
+	Step 3. Clicar no botão SIMULAR INVESTIMENTO
+	Resultado esperado:
+	-Exibição do mês e valor
+	-Exibição da tabela com valores
+	
